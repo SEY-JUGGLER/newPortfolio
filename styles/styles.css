@@ -6,6 +6,21 @@
 }
 
 :root {
+  --color-primary: #ffffff;
+  --color-secondary: #ec265e;
+  --color-white: #454e56;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #6c7983;
+  --color-grey-2: #6c7983;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #f8f8f8;
+  --color-grey-6: #12181b;
+  
+}
+
+.light-mode {
   --color-primary: #191d2b;
   --color-secondary: #215493;
   --color-white: #FFFFFF;
@@ -19,20 +34,7 @@
   --color-grey-6: #12181b;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
-}
-
-.light-mode {
-  --color-primary: #ffffff;
-  --color-secondary: #ec265e;
-  --color-white: #454e56;
-  --color-black: #000;
-  --color-grey0: #f8f8f8;
-  --color-grey-1: #6c7983;
-  --color-grey-2: #6c7983;
-  --color-grey-3: #6c7983;
-  --color-grey-4: #454e56;
-  --color-grey-5: #f8f8f8;
-  --color-grey-6: #12181b;
+ 
 }
 
 body {
@@ -313,10 +315,10 @@ section {
   width: 60%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .html {
-  width: 80%;
+  width: 95%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .css {
-  width: 95%;
+  width: 90%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .js {
   width: 85%;
@@ -336,8 +338,29 @@ section {
 .about-stats .progress-bars .progress-bar .progress-con .progress .boostrap {
   width: 70%;
 }
+.about-stats .progress-bars .progress-bar .progress-con .progress .figma {
+  width: 80%;
+}
 .about-stats .progress-bars .progress-bar .progress-con .progress .wp {
   width: 85%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .php {
+  width: 80%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .modeliser {
+  width: 90%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .sql {
+  width: 85%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .bd {
+  width: 90%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .adminWin {
+  width: 75%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .adminLin {
+  width: 80%;
 }
 
 .stat-title {
