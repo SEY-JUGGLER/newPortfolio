@@ -1,704 +1,894 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Service de messagerie email -->
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "2kXHbsQd35LCKATif",
+      });
+   })();
+</script>
+
     <title>EL HADJI MOR SEYE | Développeur Web</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="" />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo">MOR<span>SEYE</span></a>
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-link active">Accueil</a></li>
-                <li><a href="#about" class="nav-link">À propos</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#blogs" class="nav-link">Savoir-faire</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-actions">
-                <button class="theme-toggle" aria-label="Changer le thème">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <button class="menu-toggle" aria-label="Menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">THIS<span>EMS</span></a>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Accueil</a></li>
+          <li><a href="#about" class="nav-link">À propos</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#blogs" class="nav-link">Savoir-faire</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" aria-label="Changer le thème">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="menu-toggle" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-bg">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
+      <div class="hero-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-text reveal">
+          <p class="hero-subtitle">Bonjour, je suis</p>
+          <h1 class="hero-title">
+            EL HADJI MOR<br />
+            <span class="gradient-text">SEYE</span>
+          </h1>
+          <div class="hero-typing">
+            <span class="typing-text"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+          <p class="hero-description">
+            Développeur web passionné par la création d'expériences numériques
+            esthétiques, performantes et centrées sur l'utilisateur.
+          </p>
+          <div class="hero-buttons">
+            <a
+              href="img/CV El hadji Mor seye .pdf"
+              class="btn btn-primary"
+              download
+            >
+              <span>Télécharger mon CV</span>
+              <i class="fas fa-arrow-down"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <span>Me contacter</span>
+              <i class="fas fa-paper-plane"></i>
+            </a>
+          </div>
+          <div class="hero-social">
+            <a
+              href="https://github.com/SEY-JUGGLER"
+              target="_blank"
+              class="social-link"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/el-hadji-mor-seye-210aba287"
+              target="_blank"
+              class="social-link"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/elhadjimor.seye.3363"
+              target="_blank"
+              class="social-link"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://wa.me/qr/XASTU4ZINMPXN1"
+              target="_blank"
+              class="social-link"
+              aria-label="WhatsApp"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
         </div>
-        <div class="hero-content">
-            <div class="hero-text reveal">
-                <p class="hero-subtitle">Bonjour, je suis</p>
-                <h1 class="hero-title">
-                    EL HADJI MOR<br>
-                    <span class="gradient-text">SEYE</span>
-                </h1>
-                <div class="hero-typing">
-                    <span class="typing-text"></span>
-                    <span class="typing-cursor">|</span>
-                </div>
-                <p class="hero-description">
-                    Développeur web passionné par la création d'expériences numériques 
-                    esthétiques, performantes et centrées sur l'utilisateur.
-                </p>
-                <div class="hero-buttons">
-                    <a href="img/El hadji Mor seye à jours.pdf" class="btn btn-primary" download>
-                        <span>Télécharger mon CV</span>
-                        <i class="fas fa-arrow-down"></i>
-                    </a>
-                    <a href="#contact" class="btn btn-outline">
-                        <span>Me contacter</span>
-                        <i class="fas fa-paper-plane"></i>
-                    </a>
-                </div>
-                <div class="hero-social">
-                    <a href="https://github.com/SEY-JUGGLER" target="_blank" class="social-link" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/el-hadji-mor-seye-210aba287" target="_blank" class="social-link" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://www.facebook.com/elhadjimor.seye.3363" target="_blank" class="social-link" aria-label="Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://wa.me/qr/XASTU4ZINMPXN1" target="_blank" class="social-link" aria-label="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </div>
+        <div class="hero-image reveal">
+          <div class="hero-image-wrapper">
+            <div class="hero-image-glow"></div>
+            <img src="img/DSC04984.JPG" alt="EL HADJI MOR SEYE" />
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="hero-stat-number" data-target="10">0</span
+              ><span class="hero-stat-plus">+</span>
+              <span class="hero-stat-label">Projets</span>
             </div>
-            <div class="hero-image reveal">
-                <div class="hero-image-wrapper">
-                    <div class="hero-image-glow"></div>
-                    <img src="img/DSC04984.JPG" alt="EL HADJI MOR SEYE">
-                </div>
-                <div class="hero-stats">
-                    <div class="hero-stat">
-                        <span class="hero-stat-number" data-target="10">0</span><span class="hero-stat-plus">+</span>
-                        <span class="hero-stat-label">Projets</span>
-                    </div>
-                    <div class="hero-stat">
-                        <span class="hero-stat-number" data-target="15">0</span><span class="hero-stat-plus">+</span>
-                        <span class="hero-stat-label">Clients</span>
-                    </div>
-                    <div class="hero-stat">
-                        <span class="hero-stat-number" data-target="1">0</span><span class="hero-stat-plus">+</span>
-                        <span class="hero-stat-label">Années</span>
-                    </div>
-                </div>
+            <div class="hero-stat">
+              <span class="hero-stat-number" data-target="5">0</span
+              ><span class="hero-stat-plus">+</span>
+              <span class="hero-stat-label">Clients</span>
             </div>
+            <div class="hero-stat">
+              <span class="hero-stat-number" data-target="3">0</span
+              ><span class="hero-stat-plus">+</span>
+              <span class="hero-stat-label">Années</span>
+            </div>
+          </div>
         </div>
-        <div class="scroll-indicator">
-            <span>Scroller</span>
-            <i class="fas fa-chevron-down"></i>
-        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroller</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="section">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-number">01</span>
-                <h2 class="section-title">À propos <span class="gradient-text">de moi</span></h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="about-grid">
-                <div class="about-content reveal">
-                    <h3>Développeur Web & Étudiant en Licence</h3>
-                    <p>
-                        Je suis actuellement étudiant en Licence 2 à l'Université Alioune Diop de Bambey. 
-                        Passionné par le développement web, je combine créativité et expertise pour concevoir 
-                        des sites modernes et fonctionnels.
-                    </p>
-                    <p>
-                        Mon parcours académique est jalonné de projets innovants qui témoignent de ma rigueur 
-                        et de mon engagement envers le numérique. Curieux et toujours à l'affût des nouvelles 
-                        technologies, je m'efforce de créer des expériences utilisateur uniques et de qualité.
-                    </p>
-                    <div class="about-stats-grid">
-                        <div class="about-stat-card reveal">
-                            <i class="fas fa-code"></i>
-                            <span class="about-stat-number">10+</span>
-                            <span class="about-stat-label">Projets réalisés</span>
-                        </div>
-                        <div class="about-stat-card reveal">
-                            <i class="fas fa-clock"></i>
-                            <span class="about-stat-number">2+</span>
-                            <span class="about-stat-label">Années d'expérience</span>
-                        </div>
-                        <div class="about-stat-card reveal">
-                            <i class="fas fa-users"></i>
-                            <span class="about-stat-number">5+</span>
-                            <span class="about-stat-label">Clients satisfaits</span>
-                        </div>
-                        <div class="about-stat-card reveal">
-                            <i class="fas fa-star"></i>
-                            <span class="about-stat-number">5+</span>
-                            <span class="about-stat-label">Avis clients</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-skills reveal">
-                    <h3>Mes compétences</h3>
-                    <div class="skill">
-                        <div class="skill-info">
-                            <span>HTML5</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="95"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-info">
-                            <span>CSS3</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="90"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-info">
-                            <span>JavaScript</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="85"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-info">
-                            <span>PHP / MySQL</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="80"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-info">
-                            <span>Bootstrap / jQuery</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="75"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-info">
-                            <span>Figma / Adobe XD / Photoshop / Illustrator</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="80"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-info">
-                            <span>Linux / Windows Server</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="80"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-info">
-                            <span>Modélisation Merise/UML</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="90"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Timeline -->
-            <div class="section-header reveal" style="margin-top: 6rem;">
-                <span class="section-number">02</span>
-                <h2 class="section-title">Diplômes & <span class="gradient-text">Certificats</span></h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2024 - 2025</span>
-                        <h4>Licence 2 <span>(en cours)</span></h4>
-                        <p class="timeline-school">Université Alioune Diop de Bambey</p>
-                        <ul>
-                            <li>Modélisation et MERISE : conception et structuration des bases de données</li>
-                            <li>Bases de données : SQL, normalisation et optimisation des requêtes</li>
-                            <li>Linux : administration de systèmes sous Linux</li>
-                            <li>Réseaux et protocoles de communication</li>
-                            <li>Développement web et applications avancées</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2023</span>
-                        <h4>Certificat Cybersecurity Essentials</h4>
-                        <p class="timeline-school">Cisco Network Academy</p>
-                        <ul>
-                            <li>Fondamentaux de la cybersécurité</li>
-                            <li>Protection des systèmes contre les menaces</li>
-                            <li>Cryptographie et sécurisation des réseaux</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2023 - 2024</span>
-                        <h4>Licence 1</h4>
-                        <p class="timeline-school">Université Alioune Diop de Bambey</p>
-                        <ul>
-                            <li>Bases en programmation et algorithmiques</li>
-                            <li>Introduction aux réseaux et systèmes</li>
-                            <li>Premiers projets pratiques en développement web</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2022</span>
-                        <h4>Baccalauréat</h4>
-                        <p class="timeline-school">Institut Malick Sy de Thiès</p>
-                        <ul>
-                            <li>Matières scientifiques et littéraires</li>
-                            <li>Méthodologie de recherche et analyse</li>
-                            <li>Autonomie et esprit d'initiative</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2018</span>
-                        <h4>Brevet de Fin d'Étude Moyenne</h4>
-                        <p class="timeline-school">CEM Ballabey</p>
-                        <ul>
-                            <li>Mathématiques, sciences et français</li>
-                            <li>Pensée critique et capacités analytiques</li>
-                            <li>Initiation à l'informatique</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2013</span>
-                        <h4>Certificat de Fin d'Étude Élémentaire</h4>
-                        <p class="timeline-school">École El Hadji Ibrahima Sarr</p>
-                        <ul>
-                            <li>Lecture, écriture et calcul</li>
-                            <li>Communication orale et écrite</li>
-                            <li>Logique et raisonnement</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-number">01</span>
+          <h2 class="section-title">
+            À propos <span class="gradient-text">de moi</span>
+          </h2>
+          <div class="section-line"></div>
         </div>
+        <div class="about-grid">
+          <div class="about-content reveal">
+            <h3>Développeur Web & Étudiant en Licence</h3>
+            <p>
+              Je suis actuellement étudiant en Licence 2 à l'Université Alioune
+              Diop de Bambey. Passionné par le développement web, je combine
+              créativité et expertise pour concevoir des sites modernes et
+              fonctionnels.
+            </p>
+            <p>
+              Mon parcours académique est jalonné de projets innovants qui
+              témoignent de ma rigueur et de mon engagement envers le numérique.
+              Curieux et toujours à l'affût des nouvelles technologies, je
+              m'efforce de créer des expériences utilisateur uniques et de
+              qualité.
+            </p>
+            <div class="about-stats-grid">
+              <div class="about-stat-card reveal">
+                <i class="fas fa-code"></i>
+                <span class="about-stat-number">10+</span>
+                <span class="about-stat-label">Projets réalisés</span>
+              </div>
+              <div class="about-stat-card reveal">
+                <i class="fas fa-clock"></i>
+                <span class="about-stat-number">3+</span>
+                <span class="about-stat-label">Années d'expérience</span>
+              </div>
+              <div class="about-stat-card reveal">
+                <i class="fas fa-users"></i>
+                <span class="about-stat-number">5+</span>
+                <span class="about-stat-label">Clients satisfaits</span>
+              </div>
+              <div class="about-stat-card reveal">
+                <i class="fas fa-star"></i>
+                <span class="about-stat-number">5+</span>
+                <span class="about-stat-label">Avis clients</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-skills reveal">
+            <h3>Mes compétences</h3>
+            <div class="skill">
+              <div class="skill-info">
+                <span>HTML5</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="95"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-info">
+                <span>CSS3</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="90"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-info">
+                <span>JavaScript</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="85"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-info">
+                <span>PHP / MySQL</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="80"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-info">
+                <span>Bootstrap / jQuery</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="75"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-info">
+                <span>Figma / Adobe XD / Photoshop / Illustrator</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="80"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-info">
+                <span>Linux / Windows Server</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="80"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-info">
+                <span>Modélisation Merise/UML</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="90"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="section-header reveal" style="margin-top: 6rem">
+          <span class="section-number">02</span>
+          <h2 class="section-title">
+            Diplômes & <span class="gradient-text">Certificats</span>
+          </h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2024 - 2025</span>
+              <h4>Licence 3 <span></span></h4>
+              <p class="timeline-school">Université Alioune Diop de Bambey</p>
+              <ul>
+                <ul>
+                  <li>UML : modélisation avancée et scénarios de conception</li>
+                  <li>Frameworks backend : Laravel & Django</li>
+                  <li>
+                    Java avancé : programmation orientée objet et gestion des
+                    systèmes complexes
+                  </li>
+                  <li>
+                    Programmation desktop : applications robustes et
+                    ergonomiques
+                  </li>
+                  <li>
+                    Développement web : intégration backend et frontend moderne
+                  </li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2023 - 2024</span>
+              <h4>Licence 2 <span></span></h4>
+              <p class="timeline-school">Université Alioune Diop de Bambey</p>
+              <ul>
+                <li>
+                  Modélisation et MERISE : conception et structuration des bases
+                  de données
+                </li>
+                <li>
+                  Bases de données : SQL, normalisation et optimisation des
+                  requêtes
+                </li>
+                <li>Linux : administration de systèmes sous Linux</li>
+                <li>Réseaux et protocoles de communication</li>
+                <li>Développement web et applications avancées</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2023</span>
+              <h4>Certificat Cybersecurity Essentials</h4>
+              <p class="timeline-school">Cisco Network Academy</p>
+              <ul>
+                <li>Fondamentaux de la cybersécurité</li>
+                <li>Protection des systèmes contre les menaces</li>
+                <li>Cryptographie et sécurisation des réseaux</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2022 - 2023</span>
+              <h4>Licence 1</h4>
+              <p class="timeline-school">Université Alioune Diop de Bambey</p>
+              <ul>
+                <li>Bases en programmation et algorithmiques</li>
+                <li>Introduction aux réseaux et systèmes</li>
+                <li>Premiers projets pratiques en développement web</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2022</span>
+              <h4>Baccalauréat</h4>
+              <p class="timeline-school">Institut Malick Sy de Thiès</p>
+              <ul>
+                <li>Matières scientifiques et littéraires</li>
+                <li>Méthodologie de recherche et analyse</li>
+                <li>Autonomie et esprit d'initiative</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2018</span>
+              <h4>Brevet de Fin d'Étude Moyenne</h4>
+              <p class="timeline-school">CEM Ballabey</p>
+              <ul>
+                <li>Mathématiques, sciences et français</li>
+                <li>Pensée critique et capacités analytiques</li>
+                <li>Initiation à l'informatique</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2013</span>
+              <h4>Certificat de Fin d'Étude Élémentaire</h4>
+              <p class="timeline-school">École El Hadji Ibrahima Sarr</p>
+              <ul>
+                <li>Lecture, écriture et calcul</li>
+                <li>Communication orale et écrite</li>
+                <li>Logique et raisonnement</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="section">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-number">03</span>
-                <h2 class="section-title">Mon <span class="gradient-text">Portfolio</span></h2>
-                <div class="section-line"></div>
-            </div>
-            <p class="section-subtitle reveal">
-                Découvrez mes projets concrets réalisés avec différentes technologies.
-            </p>
-            <div class="portfolio-grid">
-                <div class="portfolio-card reveal">
-                    <div class="portfolio-image">
-                        <img src="img/port1.jpg" alt="Snake Game" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-links">
-                                <a href="https://github.com/SEY-JUGGLER/SnakeGame" target="_blank" class="portfolio-link" title="Code source">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://snakegamer-ten.vercel.app/" target="_blank" class="portfolio-link" title="Démo live">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Snake Game</h4>
-                        <p>Jeu Snake développé avec JavaScript</p>
-                        <div class="portfolio-tags">
-                            <span>JavaScript</span>
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-card reveal">
-                    <div class="portfolio-image">
-                        <img src="img/port2.jpg" alt="Gestion de stock" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link" title="Code source">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" class="portfolio-link" title="Démo live">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Gestion de stock</h4>
-                        <p>Application web de gestion d'inventaire</p>
-                        <div class="portfolio-tags">
-                            <span>PHP</span>
-                            <span>MySQL</span>
-                            <span>Bootstrap</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-card reveal">
-                    <div class="portfolio-image">
-                        <img src="img/port3.jpg" alt="Application mobile" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link" title="Code source">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" class="portfolio-link" title="Maquette">
-                                    <i class="fab fa-figma"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Application mobile</h4>
-                        <p>Application responsive mobile-first</p>
-                        <div class="portfolio-tags">
-                            <span>JavaScript</span>
-                            <span>Figma</span>
-                            <span>Responsive</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-card reveal">
-                    <div class="portfolio-image">
-                        <img src="img/port4.jpg" alt="Site institutionnel" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link" title="WordPress">
-                                    <i class="fab fa-wordpress"></i>
-                                </a>
-                                <a href="#" class="portfolio-link" title="Base de données">
-                                    <i class="fas fa-database"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Site institutionnel</h4>
-                        <p>Site WordPress personnalisé</p>
-                        <div class="portfolio-tags">
-                            <span>WordPress</span>
-                            <span>PHP</span>
-                            <span>HTML/CSS</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-card reveal">
-                    <div class="portfolio-image">
-                        <img src="img/port5.jpg" alt="Refonte SEO" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link" title="Rapport">
-                                    <i class="fas fa-chart-line"></i>
-                                </a>
-                                <a href="#" class="portfolio-link" title="Tests">
-                                    <i class="fas fa-vial"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Refonte SEO</h4>
-                        <p>Optimisation et référencement web</p>
-                        <div class="portfolio-tags">
-                            <span>SEO</span>
-                            <span>Performance</span>
-                            <span>Analytics</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-card reveal">
-                    <div class="portfolio-image">
-                        <img src="img/port7.jpg" alt="ERP sur mesure" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link" title="Modèle Merise">
-                                    <i class="fas fa-project-diagram"></i>
-                                </a>
-                                <a href="#" class="portfolio-link" title="Documentation">
-                                    <i class="fas fa-book"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>ERP sur mesure</h4>
-                        <p>Solution ERP personnalisée</p>
-                        <div class="portfolio-tags">
-                            <span>Merise</span>
-                            <span>PHP</span>
-                            <span>MySQL</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-number">03</span>
+          <h2 class="section-title">
+            Mon <span class="gradient-text">Portfolio</span>
+          </h2>
+          <div class="section-line"></div>
         </div>
+        <p class="section-subtitle reveal">
+          Découvrez mes projets concrets réalisés avec différentes technologies.
+        </p>
+        <div class="portfolio-grid">
+          <div class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <img src="img/port1.jpg" alt="Snake Game" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-links">
+                  <a
+                    href="https://github.com/SEY-JUGGLER/SnakeGame"
+                    target="_blank"
+                    class="portfolio-link"
+                    title="Code source"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://snakegamer-ten.vercel.app/"
+                    target="_blank"
+                    class="portfolio-link"
+                    title="Démo live"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h4>Snake Game</h4>
+              <p>Jeu Snake développé avec JavaScript</p>
+              <div class="portfolio-tags">
+                <span>JavaScript</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <img src="img/port2.jpg" alt="Gestion de stock" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-links">
+                  <a href="#" class="portfolio-link" title="Code source">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" class="portfolio-link" title="Démo live">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h4>Gestion de stock</h4>
+              <p>Application web de gestion d'inventaire</p>
+              <div class="portfolio-tags">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>Bootstrap</span>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <img
+                src="img/port3.jpg"
+                alt="Application mobile"
+                loading="lazy"
+              />
+              <div class="portfolio-overlay">
+                <div class="portfolio-links">
+                  <a href="#" class="portfolio-link" title="Code source">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" class="portfolio-link" title="Maquette">
+                    <i class="fab fa-figma"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h4>Application mobile</h4>
+              <p>Application responsive mobile-first</p>
+              <div class="portfolio-tags">
+                <span>JavaScript</span>
+                <span>Figma</span>
+                <span>Responsive</span>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <img
+                src="img/port4.jpg"
+                alt="Site institutionnel"
+                loading="lazy"
+              />
+              <div class="portfolio-overlay">
+                <div class="portfolio-links">
+                  <a href="#" class="portfolio-link" title="WordPress">
+                    <i class="fab fa-wordpress"></i>
+                  </a>
+                  <a href="#" class="portfolio-link" title="Base de données">
+                    <i class="fas fa-database"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h4>Site institutionnel</h4>
+              <p>Site WordPress personnalisé</p>
+              <div class="portfolio-tags">
+                <span>WordPress</span>
+                <span>PHP</span>
+                <span>HTML/CSS</span>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <img src="img/port5.jpg" alt="Refonte SEO" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-links">
+                  <a href="#" class="portfolio-link" title="Rapport">
+                    <i class="fas fa-chart-line"></i>
+                  </a>
+                  <a href="#" class="portfolio-link" title="Tests">
+                    <i class="fas fa-vial"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h4>Refonte SEO</h4>
+              <p>Optimisation et référencement web</p>
+              <div class="portfolio-tags">
+                <span>SEO</span>
+                <span>Performance</span>
+                <span>Analytics</span>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <img src="img/port7.jpg" alt="ERP sur mesure" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-links">
+                  <a href="#" class="portfolio-link" title="Modèle Merise">
+                    <i class="fas fa-project-diagram"></i>
+                  </a>
+                  <a href="#" class="portfolio-link" title="Documentation">
+                    <i class="fas fa-book"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h4>ERP sur mesure</h4>
+              <p>Solution ERP personnalisée</p>
+              <div class="portfolio-tags">
+                <span>Merise</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Savoir-faire Section -->
     <section id="blogs" class="section">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-number">04</span>
-                <h2 class="section-title">Savoir-<span class="gradient-text">faire</span></h2>
-                <div class="section-line"></div>
-            </div>
-            <p class="section-subtitle reveal">
-                Projets et réalisations qui témoignent de mon expertise.
-            </p>
-            <div class="blogs-grid">
-                <div class="blog-card reveal">
-                    <div class="blog-image">
-                        <img src="img/port6.jpg" alt="Premier site HTML/CSS" loading="lazy">
-                        <div class="blog-category">Projet étudiant</div>
-                    </div>
-                    <div class="blog-body">
-                        <h4>De Zéro à Hébergé : Mon Premier Site en HTML/CSS</h4>
-                        <p>Structure sémantique HTML5, Grid CSS personnalisé, Formulaire PHP/MySQL, Animation JS au scroll, Déploiement via FileZilla.</p>
-                        <div class="blog-tags">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>PHP</span>
-                            <span>MySQL</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-card reveal">
-                    <div class="blog-image">
-                        <img src="img/blog1.jpg" alt="Site WordPress" loading="lazy">
-                        <div class="blog-category">WordPress</div>
-                    </div>
-                    <div class="blog-body">
-                        <h4>Site Vitrine avec WordPress (400h de développement)</h4>
-                        <p>Intégration HTML/CSS sur Theme Divi, Plugin PHP pour gestion de RDV, Optimisation Core Web Vitals.</p>
-                        <div class="blog-tags">
-                            <span>WordPress</span>
-                            <span>PHP</span>
-                            <span>SEO</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-card reveal">
-                    <div class="blog-image">
-                        <img src="img/blog2.jpg" alt="Réservation PHP" loading="lazy">
-                        <div class="blog-category">PHP Natif</div>
-                    </div>
-                    <div class="blog-body">
-                        <h4>Système de Réservation en PHP Natif</h4>
-                        <p>Architecture MVC maison, Validation JS vanilla, Intégration SMTP avec PHPMailer, Animations CSS.</p>
-                        <div class="blog-tags">
-                            <span>PHP</span>
-                            <span>JavaScript</span>
-                            <span>MVC</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-card reveal">
-                    <div class="blog-image">
-                        <img src="img/blog3.jpg" alt="Modélisation Merise" loading="lazy">
-                        <div class="blog-category">Base de données</div>
-                    </div>
-                    <div class="blog-body">
-                        <h4>Modélisation Merise (15 tables)</h4>
-                        <p>MCD/MLD pour logiciel de gestion scolaire, SQL avec clés étrangères, Backoffice PHP avec pagination.</p>
-                        <div class="blog-tags">
-                            <span>Merise</span>
-                            <span>SQL</span>
-                            <span>PHP</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-card reveal">
-                    <div class="blog-image">
-                        <img src="img/portEcom.jpg" alt="E-commerce WooCommerce" loading="lazy">
-                        <div class="blog-category">E-commerce</div>
-                    </div>
-                    <div class="blog-body">
-                        <h4>Migration E-commerce vers WooCommerce (1200 produits)</h4>
-                        <p>Template Bootstrap 5, Import CSV via PHP CLI, Filtres AJAX, Paiements Stripe sécurisés.</p>
-                        <div class="blog-tags">
-                            <span>WooCommerce</span>
-                            <span>Bootstrap</span>
-                            <span>AJAX</span>
-                            <span>Stripe</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-card reveal">
-                    <div class="blog-image">
-                        <img src="img/port3.jpg" alt="Dashboard Admin" loading="lazy">
-                        <div class="blog-category">Fullstack</div>
-                    </div>
-                    <div class="blog-body">
-                        <h4>Dashboard Admin avec Chart.js et PHP</h4>
-                        <p>Authentification JWT, Export PDF, API REST, Design responsive mobile-first.</p>
-                        <div class="blog-tags">
-                            <span>Chart.js</span>
-                            <span>PHP</span>
-                            <span>API REST</span>
-                            <span>JWT</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-number">04</span>
+          <h2 class="section-title">
+            Savoir-<span class="gradient-text">faire</span>
+          </h2>
+          <div class="section-line"></div>
         </div>
+        <p class="section-subtitle reveal">
+          Projets et réalisations qui témoignent de mon expertise.
+        </p>
+        <div class="blogs-grid">
+          <div class="blog-card reveal">
+            <div class="blog-image">
+              <img
+                src="img/port6.jpg"
+                alt="Premier site HTML/CSS"
+                loading="lazy"
+              />
+              <div class="blog-category">Projet étudiant</div>
+            </div>
+            <div class="blog-body">
+              <h4>De Zéro à Hébergé : Mon Premier Site en HTML/CSS</h4>
+              <p>
+                Structure sémantique HTML5, Grid CSS personnalisé, Formulaire
+                PHP/MySQL, Animation JS au scroll, Déploiement via FileZilla.
+              </p>
+              <div class="blog-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card reveal">
+            <div class="blog-image">
+              <img src="img/blog1.jpg" alt="Site WordPress" loading="lazy" />
+              <div class="blog-category">WordPress</div>
+            </div>
+            <div class="blog-body">
+              <h4>Site Vitrine avec WordPress (400h de développement)</h4>
+              <p>
+                Intégration HTML/CSS sur Theme Divi, Plugin PHP pour gestion de
+                RDV, Optimisation Core Web Vitals.
+              </p>
+              <div class="blog-tags">
+                <span>WordPress</span>
+                <span>PHP</span>
+                <span>SEO</span>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card reveal">
+            <div class="blog-image">
+              <img src="img/blog2.jpg" alt="Réservation PHP" loading="lazy" />
+              <div class="blog-category">PHP Natif</div>
+            </div>
+            <div class="blog-body">
+              <h4>Système de Réservation en PHP Natif</h4>
+              <p>
+                Architecture MVC maison, Validation JS vanilla, Intégration SMTP
+                avec PHPMailer, Animations CSS.
+              </p>
+              <div class="blog-tags">
+                <span>PHP</span>
+                <span>JavaScript</span>
+                <span>MVC</span>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card reveal">
+            <div class="blog-image">
+              <img
+                src="img/blog3.jpg"
+                alt="Modélisation Merise"
+                loading="lazy"
+              />
+              <div class="blog-category">Base de données</div>
+            </div>
+            <div class="blog-body">
+              <h4>Modélisation Merise (15 tables)</h4>
+              <p>
+                MCD/MLD pour logiciel de gestion scolaire, SQL avec clés
+                étrangères, Backoffice PHP avec pagination.
+              </p>
+              <div class="blog-tags">
+                <span>Merise</span>
+                <span>SQL</span>
+                <span>PHP</span>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card reveal">
+            <div class="blog-image">
+              <img
+                src="img/portEcom.jpg"
+                alt="E-commerce WooCommerce"
+                loading="lazy"
+              />
+              <div class="blog-category">E-commerce</div>
+            </div>
+            <div class="blog-body">
+              <h4>Migration E-commerce vers WooCommerce (1200 produits)</h4>
+              <p>
+                Template Bootstrap 5, Import CSV via PHP CLI, Filtres AJAX,
+                Paiements Stripe sécurisés.
+              </p>
+              <div class="blog-tags">
+                <span>WooCommerce</span>
+                <span>Bootstrap</span>
+                <span>AJAX</span>
+                <span>Stripe</span>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card reveal">
+            <div class="blog-image">
+              <img src="img/port3.jpg" alt="Dashboard Admin" loading="lazy" />
+              <div class="blog-category">Fullstack</div>
+            </div>
+            <div class="blog-body">
+              <h4>Dashboard Admin avec Chart.js et PHP</h4>
+              <p>
+                Authentification JWT, Export PDF, API REST, Design responsive
+                mobile-first.
+              </p>
+              <div class="blog-tags">
+                <span>Chart.js</span>
+                <span>PHP</span>
+                <span>API REST</span>
+                <span>JWT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-number">05</span>
-                <h2 class="section-title">Contactez-<span class="gradient-text">moi</span></h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-info reveal">
-                    <h3>Restons en contact</h3>
-                    <p>N'hésitez pas à me contacter pour toute question, collaboration ou projet.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <span class="contact-label">Localisation</span>
-                                <p>Villa 43 Ouest Ballabey, Thiès, Sénégal</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <span class="contact-label">Email</span>
-                                <p>seyeelhadjimor0@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <div>
-                                <span class="contact-label">Téléphone</span>
-                                <p>+221 77 255 92 26</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <div>
-                                <span class="contact-label">Éducation</span>
-                                <p>Université Alioune Diop, Bambey</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-globe"></i>
-                            </div>
-                            <div>
-                                <span class="contact-label">Langues</span>
-                                <p>Français, Anglais, Wolof</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-social">
-                        <a href="https://github.com/SEY-JUGGLER" target="_blank" class="social-link" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/el-hadji-mor-seye-210aba287" target="_blank" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://www.facebook.com/elhadjimor.seye.3363" target="_blank" class="social-link" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://wa.me/qr/XASTU4ZINMPXN1" target="_blank" class="social-link" aria-label="WhatsApp">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                    </div>
-                </div>
-                <form class="contact-form reveal" id="contactForm">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" required placeholder=" ">
-                            <label for="name">Nom complet</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" required placeholder=" ">
-                            <label for="email">Email</label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" required placeholder=" ">
-                        <label for="subject">Sujet</label>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
-                        <label for="message">Votre message</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-submit">
-                        <span>Envoyer le message</span>
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </form>
-            </div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-number">05</span>
+          <h2 class="section-title">
+            Contactez-<span class="gradient-text">moi</span>
+          </h2>
+          <div class="section-line"></div>
         </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>Restons en contact</h3>
+            <p>
+              N'hésitez pas à me contacter pour toute question, collaboration ou
+              projet.
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <span class="contact-label">Localisation</span>
+                  <p>Villa 43 Ouest Ballabey, Thiès, Sénégal</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <p>seyeelhadjimor0@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div>
+                  <span class="contact-label">Téléphone</span>
+                  <p>+221 77 255 92 26</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div>
+                  <span class="contact-label">Éducation</span>
+                  <p>Université Alioune Diop, Bambey</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-globe"></i>
+                </div>
+                <div>
+                  <span class="contact-label">Langues</span>
+                  <p>Français, Anglais, Wolof</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-social">
+              <a
+                href="https://github.com/SEY-JUGGLER"
+                target="_blank"
+                class="social-link"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/el-hadji-mor-seye-210aba287"
+                target="_blank"
+                class="social-link"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/elhadjimor.seye.3363"
+                target="_blank"
+                class="social-link"
+                aria-label="Facebook"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://wa.me/qr/XASTU4ZINMPXN1"
+                target="_blank"
+                class="social-link"
+                aria-label="WhatsApp"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+          <form class="contact-form reveal" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder=" "
+                />
+                <label for="name">Nom complet</label>
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder=" "
+                />
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                required
+                placeholder=" "
+              />
+              <label for="subject">Sujet</label>
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                placeholder=" "
+              ></textarea>
+              <label for="message">Votre message</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">
+              <span>Envoyer le message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 <span class="gradient-text">EL HADJI MOR SEYE</span>. Tous droits réservés.</p>
-        </div>
+      <div class="container">
+        <p>
+          &copy; 2025 <span class="gradient-text">EL HADJI MOR SEYE</span>. Tous
+          droits réservés.
+        </p>
+      </div>
     </footer>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

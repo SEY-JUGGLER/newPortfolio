@@ -200,7 +200,7 @@
       };
 
       if (typeof emailjs !== 'undefined') {
-        emailjs.send('service_id', 'template_id', data, 'user_id')
+        emailjs.send('service_zpe8zbr', 'template_bzkl4hy', data, )
           .then(() => {
             showFormMessage('Message envoyé avec succès !', 'success');
             contactForm.reset();
